@@ -1,0 +1,340 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.claims.crimePrevention.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+		<Page id="page" title="{i18n>title}" showHeader="false">
+					<content>
+							<ObjectHeader xmlns="sap.m" icon="images/gauteng.png" title="Social Work Post-Crime Prevention">
+						<statuses/>
+						<attributes>
+							<ObjectAttribute text="BP Number : But000/Partner"/>
+						</attributes>
+						
+					</ObjectHeader>
+							<IconTabBar id="bar0">
+							    <items>
+							        <IconTabFilter text="Particulars" id="filter0" icon="sap-icon://user-edit" iconColor="Critical" key="part0">
+							            <content>
+							              
+							           <Panel>
+				    <Label text="Month and Year:" width="100%" id="label3"/>
+				    <DatePicker xmlns="sap.m" id="picker2"/>
+				    <Label text="Name of Organization:" width="100%" id="label0"/>
+				    <Input xmlns="sap.m" id="input0"/>
+				    <Label text="Physical Address &amp; website (if any):" width="100%" id="label1"/>
+				    <Input xmlns="sap.m" id="input1"/>
+				    <Label width="100%"/>
+				    <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://addresses" size="1.5em" id="icon0"/>
+				    <Title xmlns="sap.m" text="  Area of Operation" id="title0" titleStyle="H5" wrappingType="Hyphenated" textAlign="Begin"/>
+				     <Label width="100%"/>
+				    <Label text="Province:" width="100%" id="label1_1592714754436"/>
+				    <Input xmlns="sap.m" id="input0_1592714792127"/>
+				    <Label text="Region:" width="100%" id="label2"/>
+				    <Input xmlns="sap.m" id="input1_1592714849488"/>
+				     <Label text="Ward:" width="100%"/>
+				    <Input xmlns="sap.m" id="w"/>
+				    <Label text="Contact number and Email (if any):" width="100%"/>
+				    <Input xmlns="sap.m" id="C"/>
+				    <Label text="REF/BP NO (For office use):" width="100%"/>
+				    <Input xmlns="sap.m" id="R"/>
+				    <Label text="Approved:" width="100%"/>
+				    <Input xmlns="sap.m" id="A"/>
+				    <Label width="100%"/>
+				     <Title xmlns="sap.m" text="Total Number of Employee" id="title1" titleStyle="H5" wrappingType="Hyphenated" textAlign="Begin"/>
+				     <Label width="100%"/>
+				     <Text text="Subsidized Post"/>
+				     <Label width="100%"/>
+				     <Label text="Total Posts:" width="100%"/>
+				    <Input xmlns="sap.m" id="T"/>
+				    <Label text="Social Auxillary Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="S"/>
+					<Label text="Community Development Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="co"/>    
+					<Label text="Social Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="so"/>
+				    <Label text="Principle Social Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="pr"/>
+				    <Label text="Social Work Manager:" width="100%"/>
+				    <Input xmlns="sap.m" id="Soc"/>
+				    <Label text="Other:" width="100%"/>
+				    <Input xmlns="sap.m" id="oth"/>
+				     <Label width="100%"/>
+				     <Text text="Unsubsideized Post"/>
+				     <Label width="100%"/>
+				   
+				   
+				   <Label text="Total Posts:" width="100%"/>
+				    <Input xmlns="sap.m" id="UnT"/>
+				    <Label text="Social Auxillary Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="UnS"/>
+					<Label text="Community Development Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="Unco"/>    
+					<Label text="Social Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="Unso"/>
+				    <Label text="Principle Social Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="Unpr"/>
+				    <Label text="Social Work Manager:" width="100%"/>
+				    <Input xmlns="sap.m" id="UnSoc"/>
+				    <Label text="Other:" width="100%"/>
+				    <Input xmlns="sap.m" id="Unoth"/>
+				     <Label width="100%"/>
+				     <Text text="Total No of Post"/>
+				     <Label width="100%"/>
+				  
+				  
+				   <Label text="Total Posts:" width="100%"/>
+				    <Input xmlns="sap.m" id="TTo"/>
+				    <Label text="Social Auxillary Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="TS"/>
+					<Label text="Community Development Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="Tco"/>    
+					<Label text="Social Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="Tso"/>
+				    <Label text="Principle Social Worker:" width="100%"/>
+				    <Input xmlns="sap.m" id="Tpr"/>
+				    <Label text="Social Work Manager:" width="100%"/>
+				    <Input xmlns="sap.m" id="TSoc"/>
+				    <Label text="Other:" width="100%"/>
+				    <Input xmlns="sap.m" id="Toth"/>
+				     <Label width="100%"/>
+				  
+				    <content/>
+				    </Panel>
+							              
+							           <Bar id="bar1">
+							              
+							               <contentMiddle>
+							              
+							                   <Button xmlns="sap.m" text="Next" id="button1" type="Emphasized" press="onTofilterAtoB" icon="sap-icon://arrow-right"/>
+							              
+							               </contentMiddle>
+							              
+							           </Bar>  
+							              
+							            </content>
+							        </IconTabFilter>
+							        <IconTabFilter text="Other Info" icon="sap-icon://task" id="filter1" iconColor="Positive" key="part1">
+							            <content>
+							                <Table noDataText="Drop column list items here and columns in the area above" id="table0">
+							                    <items>
+							                        <ColumnListItem type="Active" id="item0">
+							                            <cells>
+							                                <Text text="Number of existing social crime prevention programmes by NPO’s" id="text7"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active" id="item00">
+							                            <cells>
+							                                <Text text="Number of NPO social crime prevention programmes" id="tex9t7"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of beneficiaries of social crime  prevention programmes "/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of children in conflict with the law referred by criminal court  "/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of  pre-sentence reports completed for children in conflict with the law"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of  pre-sentence reports completed for adults in conflict with the law"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of  children in conflict with the law assessed through government"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of  children in conflict with the law referred to  diversion programme"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                       
+							                     <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of  children in conflict with the law who participate in diversion programme"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of children in conflict with the law awaiting trial in correctional facilities   "/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of children in conflict with the law who died in residential facilities"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                     
+							                     <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of children in conflict with the law in home based supervision "/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of secure care facilities run by NPO"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of children in conflict with the law awaiting trial in secure care centres managed by NPO’s"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of prevention programmes for crime prevention and support implemented by NPO’s"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of after care programmes for families of children in conflict with the law"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                        
+							                        <ColumnListItem type="Active">
+							                            <cells>
+							                                <Text text="Number of beneficiaries of after care programmes for families of children in conflict with the law"/>
+							                               <Input width="100%"/>
+							                            </cells>
+							                           
+							                        </ColumnListItem>
+							                    </items>
+							                    <columns><Column id="column0">
+							                            <header>
+							                                <Label text="Relevant Info" id="label35"/>
+							                            </header>
+							                        </Column>
+							                        <Column id="column1">
+							                            <header>
+							                                <Label text="Totals" id="label36"/>
+							                            </header>
+							                        </Column>
+							                      
+							                        </columns>
+							                        </Table>
+							                <Bar id="bar2">
+							                    <contentMiddle>
+							                        <Button xmlns="sap.m" text="Previous" id="button2" type="Emphasized" press="onTofilterBtoA" icon="sap-icon://arrow-left"/>
+							                        <Button xmlns="sap.m" text="Next" id="button3" type="Emphasized" press="onTofilterBtoC" icon="sap-icon://arrow-right"/>
+							                    </contentMiddle>
+							                </Bar>
+							            </content>
+							        </IconTabFilter>
+							        <IconTabFilter text="Beneficiaries" icon="sap-icon://kpi-managing-my-area" iconColor="Negative" id="filter2" key="part2">
+							            <content>
+							                 <Toolbar width="100%" id="toolbar1">
+							              
+							                <content>
+							              
+							                    <ToolbarSpacer id="spacer0"/>
+							              
+							                    <Button xmlns="sap.m" id="button0" icon="sap-icon://add" press="handleButtonPressed"/>
+							              
+							                </content>
+							              
+							            </Toolbar>
+							              
+							                <Table noDataText="Click on the above &quot;+&quot; Button to add items" id="table0_1592898090242">
+							                    <columns>
+							                        <Column id="column0_1592898090238">
+							                            <header>
+							                                <Label id="label35_1592898090237" text="Surname  &amp; Initials"/>
+							                            </header>
+							                        </Column>
+							                        
+							                        <Column id="column1_1592898090240">
+							                            <header>
+							                                <Label text="ID Number" id="label36_1592898090239"/>
+							                            </header>
+							                        </Column>
+							                        <Column id="column2">
+							                            <header>
+							                                <Label text="Gender" id="label37"/>
+							                            </header>
+							                        </Column></columns></Table>
+							                <Bar id="bar3">
+							                    <contentMiddle>
+							                        <Button xmlns="sap.m" text="Previous" id="button4" type="Emphasized" press="onTofilterCtoB" icon="sap-icon://arrow-left"/>
+							                        <Button xmlns="sap.m" text="Next" id="button5" type="Emphasized" press="onTofilterCtoD" icon="sap-icon://arrow-right"/>
+							                    </contentMiddle>
+							                </Bar>
+							            </content>
+							        </IconTabFilter>
+							        <IconTabFilter text="Signature" icon="sap-icon://signature" iconColor="Contrast" id="filter0_1592865429658" key="part3">
+							            <content>
+							                <Bar id="bar4">
+							                    <contentMiddle>
+							                        <Button xmlns="sap.m" text="Previous" id="button6" type="Emphasized" press="onTofilterDtoC" icon="sap-icon://arrow-left"/>
+							                    </contentMiddle>
+							                </Bar>
+							            </content>
+							        </IconTabFilter></items>
+							</IconTabBar>
+					</content>
+				<footer>
+				    <Bar id="bar0_1594892776354">
+				        <contentRight>
+				            <Button xmlns="sap.m" text="Submit" id="button0_1594892787305" type="Emphasized"/>
+				        </contentRight>
+				    </Bar>
+				</footer>
+				</Page>
+			
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
