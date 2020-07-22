@@ -276,6 +276,7 @@
 							        </IconTabFilter>
 							        <IconTabFilter text="Beneficiaries" icon="sap-icon://kpi-managing-my-area" iconColor="Negative" id="filter2" key="part2">
 							            <content>
+
 							                 <Toolbar width="100%" id="toolbar1">
 							              
 							                <content>
@@ -288,6 +289,7 @@
 							              
 							            </Toolbar>
 							              
+
 							                <Table noDataText="Click on the above &quot;+&quot; Button to add items" id="table0_1592898090242">
 							                    <columns>
 							                        <Column id="column0_1592898090238">
